@@ -1,9 +1,14 @@
-import Image from 'next/image'
+import About from '@/Components/about'
+import Intro from '@/Components/intro'
+import SectionDivider from '@/Components/section-divider'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-    
+    <main className='flex flex-col items-center justify-center min-h-screen py-2 dark:bg-gray-900 dark:text-gray-100 gap-20'>
+
+    <Intro />
+    <SectionDivider />
+    <About />
     </main>
   )
 }
