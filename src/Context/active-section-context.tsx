@@ -1,8 +1,7 @@
 'use client'
-import { links } from '@/lib/data'
 import React from 'react'
+import  {SectionName} from '@/lib/type'
 
-type SectionName = (typeof links[number]['name']) | "None";
 type ActiveSectionProps = {
     children:React.ReactNode
 }

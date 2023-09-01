@@ -1,23 +1,18 @@
 'use strict'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import React, { useEffect } from 'react'
+import React from 'react'
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-import useIntersectionObserver from '@/Hooks/useIntersectionObserver'
-import { useActiveSectionContext } from '@/Context/active-section-context';
+import useActiveSection from '@/Hooks/useActiveSection';
 
 const Intro = () => {
-  const {ref,inView} = useIntersectionObserver()
-  const {setActiveSection}=useActiveSectionContext()
-  console.log("inside intro",inView)
-  if(inView){
-    setActiveSection('Home')
-  }
+  const {ref}=useActiveSection({sectionName:'Home',threshold:0})
+
   return (
-    <section  ref={ref} id='home' className='scroll-mt-28'>
+    <section  ref={ref} id='home' className='scroll-mt-28 mt-10'>
         <div className="flex flex-col items-center justify-center ">
            <div>
            <motion.div 

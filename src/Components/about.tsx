@@ -1,21 +1,12 @@
-import { useActiveSectionContext } from '@/Context/active-section-context';
-import useIntersectionObserver from '@/Hooks/useIntersectionObserver';
+import useActiveSection from '@/Hooks/useActiveSection';
 import React from 'react'
 
 const About = () => {
-  const {ref,inView} = useIntersectionObserver(1)
-  const {activeSection,setActiveSection}=useActiveSectionContext()
-  console.log(inView,'inside active about')
-  if(inView){
-    setActiveSection('About')
-  }else if(activeSection === 'About'){
-    setActiveSection("None")
-
-  }
+const {ref}=useActiveSection({sectionName:'About',threshold:1})
 
   return (
-    <section ref={ref} id='about' className='w-[50%] leading-7 text-center text-gray-600 scroll-mt-28 '>
-        <h2 className='text-2xl text-gray-900 mb-5 '  >
+    <section ref={ref} id='about' className='w-[50%] leading-7 text-center text-gray-500 scroll-mt-28 text-xl'>
+        <h2 className='text-4xl text-gray-900 mb-5 '  >
             About Me
         </h2>
         <p className="mb-3">
