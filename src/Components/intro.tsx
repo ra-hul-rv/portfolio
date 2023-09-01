@@ -1,17 +1,23 @@
-'use client'
+'use strict'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-// import { useSectionInView } from "@/lib/hooks";
-// import { useActiveSectionContext } from "@/context/active-section-context";
+import useIntersectionObserver from '@/Hooks/useIntersectionObserver'
+import { useActiveSectionContext } from '@/Context/active-section-context';
 
 const Intro = () => {
+  const {ref,inView} = useIntersectionObserver()
+  const {setActiveSection}=useActiveSectionContext()
+  console.log("inside intro",inView)
+  if(inView){
+    setActiveSection('Home')
+  }
   return (
-    <section id='home' className='scroll-mt-28'>
+    <section  ref={ref} id='home' className='scroll-mt-28'>
         <div className="flex flex-col items-center justify-center ">
            <div>
            <motion.div 

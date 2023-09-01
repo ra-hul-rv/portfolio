@@ -4,10 +4,12 @@ import { motion } from 'framer-motion'
 import { links } from '@/lib/data'
 import Link from 'next/link'
 import clsx from 'clsx'
+import {  useActiveSectionContext } from '@/Context/active-section-context'
 
 
 const Header = () => {
-  const [activeSection,setActiveSection] =React.useState('Home') 
+const {activeSection,setActiveSection}=useActiveSectionContext()
+
   return (
     <header className='z-[999] relative' >
         <motion.div

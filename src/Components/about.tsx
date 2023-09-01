@@ -1,9 +1,20 @@
-"use client"
+import { useActiveSectionContext } from '@/Context/active-section-context';
+import useIntersectionObserver from '@/Hooks/useIntersectionObserver';
 import React from 'react'
 
 const About = () => {
+  const {ref,inView} = useIntersectionObserver(1)
+  const {activeSection,setActiveSection}=useActiveSectionContext()
+  console.log(inView,'inside active about')
+  if(inView){
+    setActiveSection('About')
+  }else if(activeSection === 'About'){
+    setActiveSection("None")
+
+  }
+
   return (
-    <section id='about' className='w-[50%] leading-7 text-center text-gray-600 scroll-mt-28 '>
+    <section ref={ref} id='about' className='w-[50%] leading-7 text-center text-gray-600 scroll-mt-28 '>
         <h2 className='text-2xl text-gray-900 mb-5 '  >
             About Me
         </h2>
