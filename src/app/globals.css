@@ -4,11 +4,12 @@
 
 
 html {
-    --line-color: rgb(229 231 235 /1) !important;
+    --line-color: rgb(229 231 235 /1) !important ;
   }
   
-  html.dark {
-    --line-color: rgba(255, 255, 255, 0.2);
-  }
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2) !important ;
+}
+  
   .borderBlack {
     @apply border border-black/10;}

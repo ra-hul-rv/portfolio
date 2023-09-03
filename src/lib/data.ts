@@ -15,10 +15,10 @@ export const links = [
     name: "About",
     hash: "#about",
   },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
+  // {
+  //   name: "Projects",
+  //   hash: "#projects",
+  // },
   {
     name: "Skills",
     hash: "#skills",
@@ -35,30 +35,31 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduated",
+    location: "Kerala (Kollam)",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "In 2018, I graduated with a B.Tech degree and completed a course in front-end development, focusing on languages like HTML, CSS, and JavaScript.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2018",
   },
   {
     title: "Front-End Developer",
-    location: "Orlando, FL",
+    location: "Kerala (Trivandrum)",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "From 2019 to 2020, I worked as a front-end developer for 2 years, split between two companies. I spent 6 months at one company and 13 months at another. During this time, I transitioned into a full-stack engineer, gaining expertise in React, Node.js, and even learning Flutter.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2019 - 2020",
   },
   {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
+    location: "Kerala (Trivandrum)",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Since 2021, I've been working as a React developer for two different companies. Initially, I was contracted by VanillaNetwork to work with Explore AI on the Theams Water project as a front-end developer. After a year, I transitioned to InApp and worked on the Hyphen Solutions project as a React developer. I'm actively exploring new full-time opportunities.",
     icon: React.createElement(FaReact),
     date: "2021 - present",
   },
 ] as const;
+
 
 export const projectsData = [
   {
@@ -94,14 +95,16 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
+  "Flutter",
+  "D3",
+  // "Prisma",
+  // "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
+  // "GraphQL",
+  // "Apollo",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  // "PostgreSQL",
+  // "Python",
+  // "Django",
   "Framer Motion",
 ] as const;

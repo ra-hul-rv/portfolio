@@ -4,13 +4,14 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import { experiencesData } from '@/lib/data';
 import useActiveSection from '@/Hooks/useActiveSection';
+import { useTheme } from '@/Context/theme-context';
 
 const Experience = () => {
-  const theme='light'
-  const {ref}=useActiveSection({sectionName:'Experience',threshold:1})
+  const { theme } = useTheme();
+  const {ref}=useActiveSection({sectionName:'Experience',threshold:.5})
 
   return (
-    <section id='experience' ref={ref} className='mt-10'>
+    <section id='experience' ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
         <SectionHeading>
             Experience
         </SectionHeading>

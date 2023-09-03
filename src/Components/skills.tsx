@@ -22,7 +22,7 @@ const fadeInAnimationsVariants = {
 const Skills = () => {
    const {ref}= useActiveSection({sectionName:'Skills',threshold:1})
   return (
-<section id='skills' ref={ref}       className=" max-w-[53rem] scroll-mt-28 text-center mt-10"
+<section id='skills' ref={ref}       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
  >
     <SectionHeading>My Skills
 
@@ -36,7 +36,7 @@ const Skills = () => {
          initial='initial'
          whileInView='animate'
          viewport={{once:true}}
-         className='bg-white border-blac/[.1] border rounded-xl p-2 ' key={index} >{val}</motion.li>)   
+         className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80" key={index} >{val}</motion.li>)   
         }
     </ul>
 
