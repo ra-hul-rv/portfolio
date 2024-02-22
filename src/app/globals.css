@@ -2,7 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes redGradientAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
 
+@layer utilities {
+  .bg-gradient-pattern {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.03) 2px, transparent 1px), linear-gradient(to right, rgba(0, 0, 0, 0.03) 2px, transparent 1px);
+    background-size: 120px 120px;
+    animation: redGradientAnimation 5s linar infinite; /* Adjust the duration as needed */
+  }
+}
 html {
     --line-color: rgb(229 231 235 /1) !important ;
   }
