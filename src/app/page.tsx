@@ -1,4 +1,5 @@
 "use client";
+import FallingCubes from "@/Components/FallingCubes";
 import About from "@/Components/about";
 import Contact from "@/Components/contact";
 import Experience from "@/Components/experience";
@@ -13,9 +14,10 @@ export default function Home() {
       <Intro />
       <SectionDivider />
       <About />
+      <FallingCubes />
       <Skills />
       <Experience />
-      <Contact />
+      <Contact />\{" "}
     </main>
   );
 }

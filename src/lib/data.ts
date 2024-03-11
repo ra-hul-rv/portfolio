@@ -2,9 +2,6 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-// import corpcommentImg from "../../public/corpcomment.png";
-// import rmtdevImg from "../../public/rmtdev.png";
-// import wordanalyticsImg from "../../public/wordanalytics.png";
 
 export const links = [
   {
@@ -15,10 +12,6 @@ export const links = [
     name: "About",
     hash: "#about",
   },
-  // {
-  //   name: "Projects",
-  //   hash: "#projects",
-  // },
   {
     name: "Skills",
     hash: "#skills",
@@ -35,28 +28,44 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Inapp Information Technologies",
+    location: "Kerala (Trivandrum)",
+    description:
+      "Tasked with upgrading legacy wallet app, enhancing performance and modernizing UI design . Reduced the app loading time from 10 sec to 2 sec by adding code splitting and various image optimization . Improved the app performance by 50% by adding parallel api calls and using web workers fixed memory leakage by adding event delegation",
+    icon: React.createElement(FaReact),
+    date: "March 2022 - present",
+  },
+  {
+    title: "Vanillanetworks ( Explore AI )",
+    location: "Kerala (kollam)",
+    description:
+      "Worked on 2 alert managers SLAM and DAM for thames water uk .Utilized D3 to craft highly customizable, optimized charts from extensive datasets .Integrated ArcGIS maps to display sewer location",
+    icon: React.createElement(CgWorkAlt),
+    date: "Oct 2020 -  March 2022",
+  },
+  {
+    title: "Carpedaws",
+    location: "Kerala (kollam)",
+    description:
+      "Developed diverse websites and web apps using technologies such as Node.js, React, Flutter, and PHP",
+    icon: React.createElement(CgWorkAlt),
+    date: "Aug 2019 - sep 2020",
+  },
+  {
+    title: "Dridatah",
+    location: "Kerala (Attingal)",
+    description:
+      "Primarily specialized in website development, with expertise in HTML, CSS, JavaScript, and PHP",
+    icon: React.createElement(CgWorkAlt),
+    date: "Jan 2019 - july 2019",
+  },
+  {
     title: "Graduated",
     location: "Kerala (Kollam)",
     description:
       "In 2018, I graduated with a B.Tech degree and completed a course in front-end development, focusing on languages like HTML, CSS, and JavaScript.",
     icon: React.createElement(LuGraduationCap),
-    date: "2018",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Kerala (Trivandrum)",
-    description:
-      "From 2019 to 2020, I worked as a front-end developer for 2 years, split between two companies. I spent 6 months at one company and 13 months at another. During this time, I transitioned into a full-stack engineer, gaining expertise in React, Node.js, and even learning Flutter.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2020",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Kerala (Trivandrum)",
-    description:
-      "Since 2021, I've been working as a React developer for two different companies. Initially, I was contracted by VanillaNetwork to work with Explore AI on the Theams Water project as a front-end developer. After a year, I transitioned to InApp and worked on the Hyphen Solutions project as a React developer. I'm actively exploring new full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2018-2019",
   },
 ] as const;
 

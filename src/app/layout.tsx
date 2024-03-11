@@ -7,6 +7,7 @@ import { Toaster } from "react-hot-toast";
 import Footer from "@/Components/footer";
 import ThemeSwitch from "@/Components/theme-switch";
 import ThemeContextProvider from "@/Context/theme-context";
+import FallingCubes from "@/Components/FallingCubes";
 
 const inter = Inter({ subsets: ["latin"] });
 
