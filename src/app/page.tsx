@@ -17,7 +17,7 @@ export default function Home() {
       <FallingCubes />
       <Skills />
       <Experience />
-      <Contact />\{" "}
+      <Contact />{" "}
     </main>
   );
 }
