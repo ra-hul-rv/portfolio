@@ -40,7 +40,7 @@ export const experiencesData = [
     location: "Kerala (kollam)",
     description:
       "Worked on 2 alert managers SLAM and DAM for thames water uk .Utilized D3 to craft highly customizable, optimized charts from extensive datasets .Integrated ArcGIS maps to display sewer location",
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(FaReact),
     date: "Oct 2020 -  March 2022",
   },
   {
