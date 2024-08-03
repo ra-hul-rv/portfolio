@@ -18,6 +18,12 @@ const About = () => {
       {" "}
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
+  After graduating with a <span className="font-medium">B.Tech</span>, I decided to pursue my passion for programming. I enrolled in a coding bootcamp and gained expertise in <span className="font-medium">full-stack web development</span>. <span className="italic">What I enjoy most about programming</span> is the problem-solving aspect. I <span className="underline">love</span> the satisfaction of finally arriving at a solution. My core stack includes <span className="font-medium">React.js, Next.js and Node.js</span>. I am also familiar with TypeScript and Java. I am constantly eager to learn new technologies and am currently seeking a <span className="font-medium">full-time position</span> as a software developer.
+</p>
+<p>
+  <span className="italic">When I’m not coding</span>, I enjoy playing video games, watching movies, and <span className="font-medium">learning new things</span>.
+</p>
+      {/* <p className="mb-3">
         After graduating <span className="font-medium">B.Tech</span>, I decided
         to pursue my passion for programming. I enrolled in a coding bootcamp
         and learned{" "}
@@ -38,7 +44,7 @@ const About = () => {
         <span className="italic">When I&apos;m not coding</span>, I enjoy
         playing video games, watching movies. I also enjoy{" "}
         <span className="font-medium">learning new things</span>.
-      </p>
+      </p> */}
     </motion.section>
   );
 };

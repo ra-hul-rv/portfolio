@@ -19,7 +19,7 @@ const Intro = () => {
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex flex-col items-center justify-center">
-        <div className="relative">
+        {/* <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -38,7 +38,7 @@ const Intro = () => {
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
-        </div>
+        </div> */}
 
         <motion.h1
           className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
@@ -73,7 +73,7 @@ const Intro = () => {
 
           <a
             className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-            href="/resume.pdf"
+            href="/Rahul_R_V_Resume.pdf"
             download
           >
             Download CV{" "}
